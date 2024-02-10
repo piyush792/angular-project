@@ -1,0 +1,32 @@
+<div class="my-3">
+    <h2>Retry, retry When, Scan and Delay</h2>
+
+    <br />
+    <strong>Ex-1</strong>
+    <hr>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="table" *ngIf="data!=null">
+                <tr>
+                    <th>
+                        Title
+                    </th>
+                    <th>
+                        Price
+                    </th>
+                    <th>
+                        Image
+                    </th>
+                </tr>
+                <tr>
+                    <td>{{data.title}}</td>
+                    <td>{{data.price}}</td>
+                    <td>{{data.category}}</td>
+                </tr>
+            </div>
+            <button class="btn btn-primary" (click)="fetchDetails()">Fetch Details</button>
+        </div>
+    </div>
+
+</div>
